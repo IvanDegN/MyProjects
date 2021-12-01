@@ -1,0 +1,108 @@
+@font-face {
+	font-family: 'DINPro';
+	src: url('../fonts/DINPro-Bold.eot');
+	src: local('☺'), url('../fonts/DINPro-Bold.woff') format('woff'), url('../fonts/DINPro-Bold.ttf') format('truetype'), url('../fonts/DINPro-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+body
+{
+    font-family: 'DINPro';
+}
+
+.wrapper
+{
+    width: 1260px;
+    margin: 0 auto;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+header
+{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 64px;
+    margin-bottom: 96px;
+}
+
+header .logo
+{
+    max-width: 134px;
+}
+header .nav__menu
+{
+    list-style-type: none;
+}
+
+header .nav__menu li
+{
+    display: inline-block;
+    margin-right: 40px;
+}
+
+header .nav__menu .current__page
+{
+    color: #FF9900;
+    border-bottom: 2px #FF9900 solid;
+    padding-bottom: 12px;
+}
+
+header .nav__menu li a
+{
+    display: block;
+    text-decoration: none;
+    color: #263640;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+
+
+header .link__btn
+{
+    background: #FF9900;
+    padding-left: 24px;
+    padding-right: 24px;
+    color:#FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    
+    
+}
+
+header .btn
+{
+    display: flex;
+}
+
+header .link__btn::after
+{
+    content: url('../icons/envelope.svg');
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+header .nav__menu .arrow::after
+{
+    content: url('/icons/arrow.svg');
+    vertical-align: super;
+    margin-left: 5px;
+   
+}
+
+
+
+
+
+
+
