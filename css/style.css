@@ -15,6 +15,13 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'DINPro-regular';
+	src: url('../fonts/dinpro-regular.eot');
+	src: local('☺'), url('../fonts/dinpro-regular.woff') format('woff'), url('../fonts/dinpro-regular.ttf') format('truetype'), url('../fonts/dinpro-regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
 
 body
 {
@@ -28,7 +35,7 @@ a
     text-decoration: none;
 }
 
-.wrapper__header, .wrapper__main, .wrapper__images, .wrapper__list, .wrapper__about__us
+.wrapper__header, .wrapper__main, .wrapper__images, .wrapper__list, .wrapper__about__us, .wrapper__text, .wrapper__career, .wrapper__footer
 {
     width: 1260px;
     margin: 0 auto;
@@ -164,10 +171,7 @@ main .text__small__content__left
     padding-right: 43px;
 }
 
-main .btn
-{
-    
-}
+
 
 main .btn__content__left span
 {
@@ -192,10 +196,7 @@ main .btn__content__left span::after
     padding-right: 16px;
 }
 
-main .content__right
-{
-    
-}
+
 
 main .image__content__right
 {
@@ -284,15 +285,7 @@ main .icon__image__content__right
     height: 605px;
  }
 
- .list__img
- {
-    
- }
-
- .link__list__img
- {
-
- }
+ 
 
  .list__image
  {
@@ -412,8 +405,8 @@ main .icon__image__content__right
  {
      width: 1216px;
      height: 760px;
-     position: absolute;
-     display: flex;
+     display: -webkit-box;
+     margin-bottom: 80px;
  }
 
  .gray__img
@@ -432,3 +425,305 @@ main .icon__image__content__right
     height: 662px;
  }
 
+ .text__container
+ {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-end;
+ }
+
+ 
+
+ .text
+ {
+     margin-top: 560px;
+     width: 488px;
+     
+ }
+
+ .text__title
+ {
+     font-size: 32px;
+     line-height: 45px;
+     margin-bottom: 16px;
+ }
+
+ .text__title__sub
+ {
+    font-family: 'DINPro-medium';
+    font-size: 16px;
+    line-height: 28px;
+    color:#929A9F;
+ }
+
+ .text__btn
+ {
+     color:#FFFFFF;
+ }
+
+ .text__btn span
+ {
+     background-color: #FF9900;
+     font-weight: 700;
+     font-style: normal;
+     font-size: 16px;
+     line-height: 40px;
+     padding-left: 16px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+ }
+
+ .text__btn span::after
+ {
+     content: url('../icons/arrow_r_white.svg');
+     vertical-align: sub;
+     position: relative;
+     top: 2px;
+     padding-left: 16px;
+     padding-right: 16px;
+     
+ }
+
+ .text__list
+ {
+     margin-top: 80px;
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 200px;
+ }
+
+ .text__list__title
+ {
+     color:#929A9F;
+     font-size: 14px;
+     line-height: 20px;
+     letter-spacing: 0.1em;
+     text-transform: uppercase;
+     margin-top: 80px;
+ }
+
+ .text__list__item
+ {
+     width: 361px;
+     height: 212px;
+     font-family: 'DINPro-medium';
+ }
+
+ .text__list__item__title
+ {
+     margin-bottom: 20px;
+     font-size: 20px;
+     line-height: 30px;
+     color:#263640;
+ }
+
+ .text__list__item__desc
+ {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 28px;
+    color:#929A9F;
+ }
+
+ .text__list__item__link
+ {
+     color:#FF9900;
+     font-size: 16px;
+     line-height: 28px;
+
+ }
+
+ .text__list__item__link::after
+ {
+     content: url('../icons/arrow_r_orange.svg');
+     vertical-align: sub;
+     position: relative;
+     top: 2px;
+ }
+
+ .bcg__career
+ {
+     background-color: #F5F8FA;
+ }
+
+ .conatainer__career
+ {
+     display: flex;
+     align-content: space-between;
+ }
+
+ .career
+ {
+     width: 328px;
+     height: 260px;
+     margin-right: 161px;
+     position: relative;
+     top: 101px;
+ }
+
+ .title__career
+ {
+     text-transform: uppercase;
+     font-size: 14px;
+     color: #929A9F;
+     letter-spacing: 0.1em;
+     line-height: 20px;
+     margin-bottom: 16px;
+ }
+
+ .large__text__career
+ {
+     font-size: 32px;
+     line-height: 44px;
+     color:#263640;
+     margin-bottom: 24px;
+ }
+
+ .medium__text__career
+ {
+    font-family: 'DINPro-medium';
+    color:#929A9F;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 32px;
+
+ }
+
+ .btn__career
+ {
+     background-color: #FF9900;
+     color:#FFFFFF;
+     font-size: 16px;
+     line-height: 40px;
+     font-weight: 700;
+     padding-left: 16px;
+     padding-right: 16px;
+     width: 135px;
+     text-align: center;
+     
+ }
+
+ .btn__career::after
+ {
+     content: url('../icons/arrow_r_white.svg');
+     vertical-align: sub;
+     position: relative;
+     top:2px;
+     padding-left: 16px;
+ }
+
+ .build__image
+ {
+     width: 728px;
+     height: 484px;
+     box-shadow:0px 10px 50px rgba(0, 0, 0, 0.2);
+     position: relative;
+     bottom:116px;
+ }
+
+ .manager
+ {
+     width: 157px;
+     height: 78px;
+     color:#FFFFFF;
+     position: relative;
+     top:64px;
+ }
+
+ .address
+ {
+     width: 109px;
+     height: 78px;
+     color:#FFFFFF;
+     position: relative;
+     top:64px;
+ }
+
+ .footer
+ {
+    background-color: #263640;
+    height: 304px;
+ }
+
+ .container__footer
+{
+    display: flex;
+    align-content: space-between; 
+    justify-content: space-between;   
+}
+
+.title__manager
+{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    
+    margin-bottom: 8px;
+}
+
+.sub__title__manager
+{
+    font-size: 16px;
+    
+    line-height: 26px;
+    font-family: 'DINPro-regular';
+}
+
+.title__address
+{
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    
+}
+
+.sub__address
+{
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'DINPro-regular';
+    
+}
+
+.logo__footer__img
+{
+    position: relative;
+    top: 82px;
+}
+
+.footer__line
+{
+    opacity: 0.2;
+    border: 1px solid #FFFFFF;
+}
+
+.footer__links
+{
+    position: relative;
+    top:168px;
+    display: flex;
+    font-family: 'DINPro-regular';
+    color:#FFFFFF;
+    font-size: 14px;
+    line-height: 18px;
+    opacity: 0.5;
+   
+}
+
+.footer__line
+{
+    position: relative;
+    top:128px;
+}
+
+.footer__link:nth-child(1)
+{
+    
+    margin-right: 8px;
+}
+
+.footer__link:nth-child(2)
+{
+    margin-left: 8px;
+}
